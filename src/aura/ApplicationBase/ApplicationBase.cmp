@@ -1,0 +1,20 @@
+<aura:component extends="c:ComponentBase" extensible="true" abstract="true">
+
+	<!--Attributes-->
+	<aura:attribute name="recordId" type="String" access="public"/>
+	<aura:attribute name="state" type="Object" access="public"/>
+
+	<!--Handlers-->
+   	<aura:handler name="init" value="{!this}" action="{!c.initBaseComponent}"/>
+
+	<!--Events-->
+	<aura:registerEvent name="navigateToComponentEvent" type="c:NavigateToComponent"/>
+	<aura:registerEvent name="navigateToPreviousComponentEvent" type="c:NavigateToPreviousComponent"/>
+	<aura:registerEvent name="initServiceEvent" type="c:InitService"/>
+	<aura:registerEvent name="showHideSpinnerEvent" type="c:ShowHideSpinner"/>
+	<aura:registerEvent name="refreshViewEvent" type="c:RefreshView"/>
+
+	<!--Content-->
+	{!v.body} 
+
+</aura:component>

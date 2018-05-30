@@ -1,0 +1,32 @@
+<aura:component extends="c:ApplicationBase" Controller="MetadataServiceProvider">
+
+	<!--Methods-->
+	<aura:method name="getObjectName" action="{!c.getObjectNameJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+
+	<aura:method name="getRecordTypes" action="{!c.getRecordTypesJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+
+	<aura:method name="getRecordTypesMap" action="{!c.getRecordTypesMapJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+ 	
+ 	<aura:method name="getPicklistValues" action="{!c.getPicklistValuesJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+
+	<aura:method name="getChildRelationships" action="{!c.getChildRelationshipsJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+
+	<aura:method name="getQuickActions" action="{!c.getQuickActionsJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+
+	<aura:method name="getLightningQuickActions" action="{!c.getLightningQuickActionsJS}">
+		<aura:attribute name="params" type="Object"/>
+	</aura:method>
+	
+</aura:component>
